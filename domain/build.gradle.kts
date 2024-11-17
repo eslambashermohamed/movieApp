@@ -13,8 +13,9 @@ kotlin {
         jvmTarget = org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_11
     }
 }
-dependencies{
+dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
     implementation("java.inject:javax.inject:1")
     implementation("android.paging-common-ktx:3.1.1")
+    implementation(project(":data"))
 }

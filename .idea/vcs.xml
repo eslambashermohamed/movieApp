@@ -2,9 +2,5 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Coroutines_project" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/ECommerce" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/cities" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/composeproject" vcs="Git" />
   </component>
 </project>
