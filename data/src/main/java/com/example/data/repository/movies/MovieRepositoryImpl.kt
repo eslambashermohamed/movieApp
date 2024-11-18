@@ -3,6 +3,7 @@ package com.example.data.repository.movies
 import com.example.data.mapper.toMovieModel
 import com.example.data.remote.ApiMovieService
 import com.example.domain.dto.MovieModel
+import com.example.domain.repository.MovieRepository
 import javax.inject.Inject
 
 class MovieRepositoryImpl @Inject constructor(

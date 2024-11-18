@@ -16,6 +16,7 @@ jetbrainsKotlinJvm = "2.0.0"
 kapt="1.8.10"
 retrofit = "2.9.0"
 xx = "presentation')"
+pagingCommonAndroid = "3.3.4"
 
 
 [libraries]
@@ -40,6 +41,7 @@ androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
 xx = { module = "project(path:'", version.ref = "xx" }
+androidx-paging-common-android = { group = "androidx.paging", name = "paging-common-android", version.ref = "pagingCommonAndroid" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

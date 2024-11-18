@@ -1,9 +1,9 @@
 package com.example.movieapp
 
 import com.example.data.remote.ApiMovieService
-import com.example.data.repository.categories.CategoriesRepo
+import com.example.domain.repository.CategoriesRepo
 import com.example.data.repository.categories.CategoriesRepoImpl
-import com.example.data.repository.movies.MovieRepository
+import com.example.domain.repository.MovieRepository
 import com.example.data.repository.movies.MovieRepositoryImpl
 import dagger.Module
 import dagger.Provides

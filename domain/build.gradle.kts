@@ -1,6 +1,7 @@
 plugins {
     id("java-library")
     alias(libs.plugins.jetbrains.kotlin.jvm)
+
 }
 
 java {
@@ -14,8 +15,10 @@ kotlin {
     }
 }
 dependencies {
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
-    implementation("java.inject:javax.inject:1")
-    implementation("android.paging-common-ktx:3.1.1")
+
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
+    implementation ("javax.inject:javax.inject:1")
+    implementation( "androidx.paging:paging-common-ktx:3.1.1")
     implementation(project(":data"))
+
 }
