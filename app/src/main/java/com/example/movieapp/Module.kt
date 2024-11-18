@@ -5,6 +5,8 @@ import com.example.domain.repository.CategoriesRepo
 import com.example.data.repository.categories.CategoriesRepoImpl
 import com.example.domain.repository.MovieRepository
 import com.example.data.repository.movies.MovieRepositoryImpl
+import com.example.domain.usecases.CategoriesUseCase
+import com.example.domain.usecases.MoviesUsecases
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -36,5 +38,16 @@ object Module {
    @Singleton
    fun getCategoriesRepository(apiMovieService: ApiMovieService): CategoriesRepo =
        CategoriesRepoImpl(apiMovieService)
+
+    @Provides
+    @Singleton
+    fun getCategoriesUseCase(categoriesRepo: CategoriesRepo): CategoriesUseCase =
+        CategoriesUseCase(categoriesRepo)
+
+    @Provides
+    @Singleton
+    fun getMoviesUseCase(movieRepository: MovieRepository): MoviesUsecases =
+        MoviesUsecases(movieRepository)
+
 
 }
