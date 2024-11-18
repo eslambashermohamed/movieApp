@@ -11,7 +11,7 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import javax.inject.Inject
 
-class Movies_usecases @Inject constructor(val movieRepository: MovieRepository) {
+class MoviesUsecases @Inject constructor(val movieRepository: MovieRepository) {
     operator fun invoke(language: String,cateId:String) : Flow<Resources<Pager<Int, MovieItemModel>>> = flow {
         try {
             emit(Resources.Loading())

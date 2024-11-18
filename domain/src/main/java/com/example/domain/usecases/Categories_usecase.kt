@@ -7,7 +7,7 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import javax.inject.Inject
 
-class Categories_usecase @Inject constructor(val categoriesRepo: CategoriesRepo) {
+class CategoriesUseCase @Inject constructor(val categoriesRepo: CategoriesRepo) {
     operator fun invoke(language: String): Flow<Resources<GenreModel>> = flow {
         try {
             emit(Resources.Loading())
